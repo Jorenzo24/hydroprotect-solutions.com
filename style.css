@@ -206,12 +206,17 @@ a {
   align-items: center;
   overflow: hidden;
   background: var(--bg-primary);
+  background-image: url('images/hero-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
   background: 
+    linear-gradient(135deg, rgba(10, 22, 40, 0.85) 0%, rgba(10, 22, 40, 0.75) 50%, rgba(10, 22, 40, 0.85) 100%),
     radial-gradient(circle at 20% 50%, hsla(200, 85%, 54%, 0.15) 0%, transparent 50%),
     radial-gradient(circle at 80% 80%, hsla(35, 92%, 58%, 0.1) 0%, transparent 50%),
     radial-gradient(circle at 40% 20%, hsla(215, 85%, 64%, 0.05) 0%, transparent 50%);
@@ -237,21 +242,38 @@ a {
   z-index: 1;
   padding: 8rem var(--space-lg) 4rem;
   max-width: 680px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  margin-bottom: var(--space-lg);
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.hero-text {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
 }
 
 .badge {
   display: inline-flex;
   align-items: center;
   gap: var(--space-xs);
-  border: 1px solid hsla(200, 85%, 54%, 0.3);
-  background: hsla(200, 85%, 54%, 0.1);
+  border: 1px solid hsla(200, 85%, 54%, 0.4);
+  background: hsla(200, 85%, 54%, 0.15);
+  backdrop-filter: blur(10px);
   border-radius: 50px;
   padding: var(--space-xs) var(--space-md);
   margin-bottom: var(--space-xl);
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--primary);
-  backdrop-filter: blur(10px);
 }
 
 .badge-dot {
@@ -266,21 +288,6 @@ a {
 @keyframes pulse-glow {
   0%, 100% { opacity: 0.6; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.2); }
-}
-
-.hero h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 800;
-  margin-bottom: var(--space-lg);
-  line-height: 1.1;
-}
-
-.hero-text {
-  font-size: 1.125rem;
-  color: var(--text-secondary);
-  max-width: 520px;
-  margin-bottom: var(--space-md);
-  line-height: 1.7;
 }
 
 .stats {
