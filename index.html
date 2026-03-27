@@ -6,15 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Étanchéité Liquide Polyuréa & Protection Industrielle | HydroProtect</title>
   <meta name="description" content="Expert en étanchéité liquide polyuréa par projection à chaud. Unité mobile automatisée Binks IS30 pour structures industrielles, militaires et B2B. Garantie 25 ans, prise en 9 secondes.">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23207cc6'%3E%3Cpath d='M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0a1628">
+  <meta property="og:title" content="HydroProtect - Étanchéité Liquide Polyuréa">
+  <meta property="og:description" content="Expert en étanchéité liquide polyuréa par projection à chaud. Unité mobile automatisée Binks IS30 pour structures industrielles.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&h=630&fit=crop">
 </head>
-<body>
+<body class="loading">
 
   <!-- NAVBAR -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="container navbar-inner">
       <div class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg>
@@ -26,6 +33,11 @@
         <a href="#engagements">Engagements</a>
         <a href="#contact" class="nav-cta">Contact</a>
       </div>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </nav>
 
@@ -36,48 +48,48 @@
       <div class="hero-bg"></div>
       <div class="hero-grid"></div>
       <div class="container hero-content">
-        <div class="badge">
+        <div class="badge" data-aos="fade-down">
           <span class="badge-dot"></span>
           <span>Technologie Polyuréa</span>
         </div>
-        <h1>L'étanchéité liquide haute performance : <span class="text-gradient">9 secondes pour figer l'avenir</span> de vos structures</h1>
-        <p class="hero-text">HydroProtect déploie la technologie Polyuréa de dernière génération pour l'étanchéité industrielle et la protection des surfaces.</p>
-        <p class="hero-text">Sans joints, sans flammes et projetée par nos unités mobiles automatisées, notre solution assure une protection indestructible pour 25 ans.</p>
-        <p class="hero-text">Vos surfaces sont prêtes à l'emploi en quelques minutes seulement.</p>
-        <div class="stats">
-          <div class="stat"><div class="stat-value">9s</div><div class="stat-label">Prise immédiate</div></div>
-          <div class="stat"><div class="stat-value">25 ans</div><div class="stat-label">Garantie</div></div>
-          <div class="stat"><div class="stat-value">800 m²/j</div><div class="stat-label">Capacité</div></div>
+        <h1 data-aos="fade-up" data-aos-delay="100">L'étanchéité liquide haute performance : <span class="text-gradient">9 secondes pour figer l'avenir</span> de vos structures</h1>
+        <p class="hero-text" data-aos="fade-up" data-aos-delay="200">HydroProtect déploie la technologie Polyuréa de dernière génération pour l'étanchéité industrielle et la protection des surfaces.</p>
+        <p class="hero-text" data-aos="fade-up" data-aos-delay="300">Sans joints, sans flammes et projetée par nos unités mobiles automatisées, notre solution assure une protection indestructible pour 25 ans.</p>
+        <p class="hero-text" data-aos="fade-up" data-aos-delay="400">Vos surfaces sont prêtes à l'emploi en quelques minutes seulement.</p>
+        <div class="stats" data-aos="fade-up" data-aos-delay="500">
+          <div class="stat"><div class="stat-value" data-count="9">0</div><div class="stat-label">Prise immédiate</div></div>
+          <div class="stat"><div class="stat-value" data-count="25">0</div><div class="stat-label">Garantie</div></div>
+          <div class="stat"><div class="stat-value" data-count="800">0</div><div class="stat-label">Capacité</div></div>
         </div>
-        <a href="#contact" class="btn-cta">Demander un diagnostic technique gratuit <span class="arrow">→</span></a>
+        <a href="#contact" class="btn-cta btn-cta-lg" data-aos="fade-up" data-aos-delay="600">Demander un diagnostic technique gratuit <span class="arrow">→</span></a>
       </div>
     </section>
 
     <!-- PROBLEMS -->
     <section class="section bg-card" id="problemes">
       <div class="container">
-        <div class="section-header">
-          <h2>Pourquoi l'étanchéité traditionnelle <span class="text-destructive">n'est plus à la hauteur</span> de vos enjeux ?</h2>
+        <div class="section-header" data-aos="fade-up">
+          <h2>Pourquoi l'étanchéité traditionnelle <span class="text-danger">n'est plus à la hauteur</span> de vos enjeux ?</h2>
           <p>Les systèmes d'étanchéité classiques comme le bitume ou les membranes multicouches présentent des limites critiques :</p>
         </div>
         <div class="grid-3">
-          <div class="card card-destructive">
-            <div class="card-icon bg-destructive-light">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-destructive"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+          <div class="card card-destructive" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-icon bg-danger-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-danger"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
             </div>
             <h3>Vulnérabilité des joints</h3>
             <p>Les jonctions finissent par céder sous l'effet des dilatations thermiques et des rayons UV.</p>
           </div>
-          <div class="card card-destructive">
-            <div class="card-icon bg-destructive-light">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-destructive"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+          <div class="card card-destructive" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon bg-danger-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-danger"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
             </div>
             <h3>Risques d'incendie</h3>
             <p>L'application traditionnelle nécessite souvent l'usage de flammes et de chalumeaux, une menace réelle pour vos actifs.</p>
           </div>
-          <div class="card card-destructive">
-            <div class="card-icon bg-destructive-light">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-destructive"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <div class="card card-destructive" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-icon bg-danger-light">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-danger"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <h3>Pertes d'exploitation</h3>
             <p>Les temps de pose fastidieux et les délais de séchage prolongés immobilisent vos infrastructures trop longtemps.</p>
@@ -89,26 +101,26 @@
     <!-- SOLUTION -->
     <section class="section" id="technologie">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2>Le cuvelage moléculaire HydroProtect : <span class="text-gradient">une fusion instantanée</span></h2>
           <p>Notre résine bi-composante appliquée par projection à chaud fusionne instantanément avec votre support, qu'il s'agisse de béton, d'acier ou de bois.</p>
         </div>
         <div class="grid-3">
-          <div class="card card-primary">
+          <div class="card card-primary" data-aos="fade-up" data-aos-delay="100">
             <div class="card-icon bg-primary-light">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             </div>
             <h3>Vitesse d'exécution record</h3>
             <p>Jusqu'à 800 m² traités et livrés par jour.</p>
           </div>
-          <div class="card card-primary">
+          <div class="card card-primary" data-aos="fade-up" data-aos-delay="200">
             <div class="card-icon bg-primary-light">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <h3>Prise immédiate</h3>
             <p>Durcissement instantané en quelques secondes pour une remise en service ultra-rapide.</p>
           </div>
-          <div class="card card-primary">
+          <div class="card card-primary" data-aos="fade-up" data-aos-delay="300">
             <div class="card-icon bg-primary-light">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
             </div>
@@ -122,16 +134,16 @@
     <!-- MOBILE UNIT -->
     <section class="section bg-card" id="unite-mobile">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header" data-aos="fade-up">
           <h2>Une station de préparation automatisée <span class="text-gradient">au pied de votre chantier</span></h2>
           <p>L'innovation HydroProtect repose sur notre unité mobile connectée, équipée de la technologie Binks IS30 de dernière génération.</p>
         </div>
         <div class="grid-2-asymmetric">
-          <div class="mobile-unit-image">
+          <div class="mobile-unit-image" data-aos="fade-right">
             <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1280&h=720&fit=crop" alt="Unité mobile HydroProtect Binks IS30" loading="lazy" width="1280" height="720">
           </div>
           <div class="specs-list">
-            <div class="spec">
+            <div class="spec" data-aos="fade-left" data-aos-delay="100">
               <div class="card-icon bg-primary-light">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><circle cx="12" cy="12" r="10"/><line x1="22" x2="18" y1="12" y2="12"/><line x1="6" x2="2" y1="12" y2="12"/><line x1="12" x2="12" y1="6" y2="2"/><line x1="12" x2="12" y1="22" y2="18"/></svg>
               </div>
@@ -140,7 +152,7 @@
                 <p>Monitoring en temps réel de la température, de la pression et du ratio de mélange pour une membrane parfaitement régulière.</p>
               </div>
             </div>
-            <div class="spec">
+            <div class="spec" data-aos="fade-left" data-aos-delay="200">
               <div class="card-icon bg-primary-light">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
               </div>
@@ -149,7 +161,7 @@
                 <p>Un gain de performance de 27% par m² par rapport aux équipements standards.</p>
               </div>
             </div>
-            <div class="spec">
+            <div class="spec" data-aos="fade-left" data-aos-delay="300">
               <div class="card-icon bg-primary-light">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-primary"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></svg>
               </div>
@@ -240,6 +252,211 @@
     </section>
 
   </main>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (mobileMenuToggle && navLinks) {
+      mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('active');
+        navLinks.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+      });
+      
+      // Close menu when clicking on links
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
+          mobileMenuToggle.classList.remove('active');
+          navLinks.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    }
+
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 100
+    });
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    let lastScrollY = 0;
+
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      
+      if (scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      lastScrollY = scrollY;
+    });
+
+    // Counter animation for stats
+    const counters = document.querySelectorAll('[data-count]');
+    const speed = 200;
+
+    const countUp = (counter) => {
+      const target = +counter.getAttribute('data-count');
+      const count = +counter.innerText;
+      const increment = target / speed;
+
+      if (count < target) {
+        counter.innerText = Math.ceil(count + increment);
+        setTimeout(() => countUp(counter), 10);
+      } else {
+        counter.innerText = target;
+        // Add suffixes
+        if (counter.getAttribute('data-count') === '9') {
+          counter.innerText = target + 's';
+        } else if (counter.getAttribute('data-count') === '25') {
+          counter.innerText = target + ' ans';
+        } else if (counter.getAttribute('data-count') === '800') {
+          counter.innerText = target + ' m²/j';
+        }
+      }
+    };
+
+    // Intersection Observer for counters
+    const observerOptions = {
+      threshold: 0.5,
+      rootMargin: '0px'
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          countUp(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    counters.forEach(counter => {
+      counterObserver.observe(counter);
+    });
+
+    // Smooth scroll for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Loading animation
+    window.addEventListener('load', () => {
+      document.body.classList.remove('loading');
+    });
+
+    // Parallax effect for hero background
+    const heroBg = document.querySelector('.hero-bg');
+    const heroGrid = document.querySelector('.hero-grid');
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const parallaxSpeed = 0.5;
+      
+      if (heroBg && heroGrid) {
+        heroBg.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+        heroGrid.style.transform = `translateY(${scrolled * parallaxSpeed * 0.5}px)`;
+      }
+    });
+
+    // Add hover effect to cards
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-8px) scale(1.02)';
+      });
+      
+      card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Button ripple effect
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+      button.addEventListener('click', function(e) {
+        const ripple = document.createElement('span');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+        
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        ripple.classList.add('ripple');
+        
+        this.appendChild(ripple);
+        
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
+      });
+    });
+  </script>
+
+  <style>
+    /* Loading animation */
+    .loading {
+      overflow: hidden;
+    }
+    
+    .loading * {
+      animation: none !important;
+      transition: none !important;
+    }
+    
+    /* Ripple effect */
+    .ripple {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      transform: scale(0);
+      animation: ripple-animation 0.6s ease-out;
+      pointer-events: none;
+    }
+    
+    @keyframes ripple-animation {
+      to {
+        transform: scale(4);
+        opacity: 0;
+      }
+    }
+    
+    /* Enhanced button styles */
+    .btn {
+      position: relative;
+      overflow: hidden;
+    }
+  </style>
 
 </body>
 </html>
