@@ -63,21 +63,20 @@ Site web moderne et optimisé pour HydroProtect, spécialiste de l'étanchéité
 ├── index.html          # Page principale
 ├── style.css           # Styles complets
 ├── images/             # Dossier des images
-│   └── hero-background.jpg  # Image de fond du hero
+│   └── entreprise-etancheite-liquide.png  # Image de fond du hero
 └── README.md           # Documentation
 ```
 
 ### Images
-Pour ajouter votre image de fond :
-1. Placez votre image dans le dossier `images/`
-2. Renommez-la en `hero-background.jpg`
-3. Ou modifiez le chemin dans `style.css` ligne 209
+L'image de fond est configurée pour :
+- **Chemin** : `images/entreprise-etancheite-liquide.png`
+- **Dimensions recommandées** : 1920x1080px minimum
+- **Format** : PNG (actuel) ou JPG/WebP
+- **Contenu** : Ouvrier appliquant une étanchéité liquide
 
-Recommandations pour l'image :
-- Dimensions : 1920x1080px minimum
-- Format : JPG ou WebP
-- Poids : < 500KB optimisé
-- Contenu : Ouvrier appliquant une étanchéité liquide
+Pour modifier l'image :
+1. Remplacez le fichier dans le dossier `images/`
+2. Ou modifiez le chemin dans `style.css` ligne 209
 
 ### Navigateurs Supportés
 - Chrome 80+
