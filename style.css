@@ -739,3 +739,41 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* Fix layout live */
+.logo,
+.logo-text,
+.nav-links a {
+  white-space: nowrap;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.navbar-inner {
+  gap: 2rem;
+}
+
+.nav-links {
+  flex-wrap: nowrap;
+}
+
+.hero {
+  padding-top: 72px;
+}
+
+.hero-content {
+  padding-top: calc(8rem + 72px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero-content {
+    padding-top: 6rem;
+  }
+}
